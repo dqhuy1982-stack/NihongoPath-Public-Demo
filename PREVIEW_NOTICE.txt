@@ -1,0 +1,7 @@
+NIHONGO PATH — PUBLIC DEMO ONLY
+Built from the private develop branch, static assets only.
+No real login, production user accounts, backend, or D1 database.
+Progress saved here is local to this browser/device and is not synchronized.
+Do not enter real passwords or personal information in prototype forms.
+Public pages are visible to anyone with the URL. This is not a secure private portal.
+All 46 Kana MP3 recordings are bundled locally in this public preview.

@@ -1,0 +1,7 @@
+AnimCJK — Copyright 2016–2026 FM&SH.
+Source: https://github.com/parsimonhi/animCJK
+Source revision: master
+Kana SVGs redistributed under the LGPL-3.0-or-later option.
+Original SVG sources are included here. kana-data.js is a derived extraction of ordered median paths and outlines for the Nihongo Path player.
+Modifications: extracted path data, grouped segments by animation start time; custom rendering, colors, numbered steps and playback controls. No upstream executable code is embedded.
+See COPYING.txt, LGPL.txt and GPL.txt.

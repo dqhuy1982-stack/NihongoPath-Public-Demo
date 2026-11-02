@@ -1,0 +1,1103 @@
+{
+  "schemaVersion": 1,
+  "fictional": true,
+  "note": "Two sample editorial drafts. No reviewer approval or learner evidence is fabricated.",
+  "drafts": [
+    {
+      "id": "sample-intro-v2",
+      "status": "draft",
+      "revision": 0,
+      "baseVersion": 1,
+      "content": {
+        "id": "n5-introduction",
+        "version": 2,
+        "title": "Giới thiệu bản thân",
+        "level": "N5",
+        "status": "authored-sample",
+        "scope": "Nội dung đọc tự biên soạn để thử một vòng học hoàn chỉnh. Chưa có audio hoặc chấm nói; không phải đề JLPT.",
+        "sourceNote": "Đối chiếu mục tiêu và cách dùng sơ cấp với Irodori Starter, Lesson 3 (Japan Foundation); hội thoại và câu hỏi biên soạn riêng.",
+        "sourceUrl": "https://www.irodori.jpf.go.jp/assets/data/starter/pdf/X_L03.pdf",
+        "readings": {
+          "学生": "がくせい",
+          "佐藤": "さとう",
+          "来": "き",
+          "会社員": "かいしゃいん",
+          "日本": "にほん",
+          "願": "ねが"
+        },
+        "cast": [
+          {
+            "id": "mai",
+            "name": "Mai",
+            "role": "Du học sinh · nhân viên bán thời gian",
+            "jp": "グエン・マイ"
+          },
+          {
+            "id": "aoi",
+            "name": "Aoi",
+            "role": "Giáo viên tiếng Nhật",
+            "jp": "佐藤あおい"
+          }
+        ],
+        "story": [
+          {
+            "speaker": "mai",
+            "text": "はじめまして。グエン・マイです。ベトナムから来ました。",
+            "meaning": "Lần đầu gặp bạn. Tôi là Nguyễn Mai. Tôi đến từ Việt Nam."
+          },
+          {
+            "speaker": "aoi",
+            "text": "佐藤あおいです。よろしくお願いします。マイさんは学生ですか。",
+            "meaning": "Tôi là Sato Aoi. Rất vui được làm quen. Mai là học sinh/sinh viên phải không?"
+          },
+          {
+            "speaker": "mai",
+            "text": "はい、学生です。よろしくお願いします。",
+            "meaning": "Vâng, tôi là sinh viên. Rất vui được làm quen."
+          }
+        ],
+        "concepts": [
+          {
+            "id": "identity",
+            "name": "Giới thiệu tên & vai trò",
+            "questionId": "name-repair",
+            "reading": "Tên + です"
+          },
+          {
+            "id": "topic-wa",
+            "name": "は khi làm trợ từ",
+            "questionId": "wa-repair",
+            "reading": "は → wa trong vai trò nêu chủ đề"
+          },
+          {
+            "id": "polite-question",
+            "name": "Hỏi lịch sự với ですか",
+            "questionId": "question-repair",
+            "reading": "...ですか。"
+          },
+          {
+            "id": "origin",
+            "name": "Nói nơi đến từ",
+            "questionId": "origin-repair",
+            "reading": "...から来ました。"
+          },
+          {
+            "id": "sentence-order",
+            "name": "Thứ tự câu với は và です",
+            "questionId": "order-repair",
+            "reading": "Chủ đề → は → thông tin → です"
+          }
+        ],
+        "cards": {
+          "identity": {
+            "title": "Một mẫu nhỏ, dùng được ngay.",
+            "example": "わたしは学生です。",
+            "meaning": "Tôi là học sinh / sinh viên.",
+            "pattern": "[Chủ đề] は [Thông tin] です。",
+            "points": [
+              "は nêu chủ đề và đọc là wa trong câu này.",
+              "です kết thúc mẫu câu lịch sự; không đọc là một từ “là” đứng riêng.",
+              "Để nói tên: グエン・マイです。 Khi bối cảnh đã rõ, không cần lặp わたしは."
+            ],
+            "pitfall": "Không thêm さん sau tên mình khi tự giới thiệu."
+          },
+          "question": {
+            "title": "Hỏi bằng một chi tiết ở cuối câu.",
+            "example": "マイさんは学生ですか。",
+            "meaning": "Mai là học sinh / sinh viên phải không?",
+            "pattern": "[Chủ đề] は [Thông tin] ですか。",
+            "points": [
+              "か ở cuối tạo câu hỏi lịch sự trong mẫu này.",
+              "Trả lời ngắn: はい、学生です。",
+              "さん là cách gọi lịch sự người khác; không dùng để tự gọi mình."
+            ],
+            "pitfall": "Đọc tới cuối câu. Đừng bỏ qua か rồi hiểu câu hỏi thành khẳng định."
+          },
+          "origin": {
+            "title": "Nói mình đến từ đâu.",
+            "example": "ベトナムから来ました。",
+            "meaning": "Tôi đến từ Việt Nam.",
+            "pattern": "[Nơi xuất phát] から来ました。",
+            "points": [
+              "から cho biết nơi xuất phát.",
+              "Học cả cụm から来ました trong lời giới thiệu trước.",
+              "Kết lại bằng よろしくお願いします。 như một lời làm quen lịch sự."
+            ],
+            "pitfall": "へ行きます là đi tới; khác hướng với から来ました."
+          }
+        },
+        "units": {
+          "story": {
+            "type": "story",
+            "label": "Gặp Mai & Aoi",
+            "seconds": 60
+          },
+          "identity": {
+            "type": "learn",
+            "cardId": "identity",
+            "label": "Tên & vai trò",
+            "seconds": 60
+          },
+          "question": {
+            "type": "learn",
+            "cardId": "question",
+            "label": "Hỏi lịch sự",
+            "seconds": 60
+          },
+          "origin": {
+            "type": "learn",
+            "cardId": "origin",
+            "label": "Nơi đến từ",
+            "seconds": 60
+          },
+          "q-name": {
+            "type": "question",
+            "questionId": "name",
+            "label": "Gọi lại mẫu câu",
+            "seconds": 45
+          },
+          "q-wa": {
+            "type": "question",
+            "questionId": "wa",
+            "label": "Nhận ra vai trò は",
+            "seconds": 45
+          },
+          "q-order": {
+            "type": "question",
+            "questionId": "order",
+            "label": "Ghép câu",
+            "seconds": 90
+          },
+          "q-question": {
+            "type": "question",
+            "questionId": "question",
+            "label": "Đặt câu hỏi",
+            "seconds": 60
+          },
+          "q-origin": {
+            "type": "question",
+            "questionId": "origin",
+            "label": "Phân biệt xuất xứ",
+            "seconds": 60
+          },
+          "personal": {
+            "type": "personal",
+            "label": "Dùng với thông tin của bạn",
+            "seconds": 60
+          },
+          "q-transfer": {
+            "type": "question",
+            "questionId": "transfer",
+            "label": "Thử ngữ cảnh mới",
+            "seconds": 60
+          }
+        },
+        "plans": {
+          "3": [
+            "identity",
+            "q-name",
+            "q-wa"
+          ],
+          "5": [
+            "story",
+            "identity",
+            "q-name",
+            "q-wa",
+            "personal"
+          ],
+          "15": [
+            "story",
+            "identity",
+            "question",
+            "origin",
+            "q-name",
+            "q-wa",
+            "q-order",
+            "q-question",
+            "q-origin",
+            "personal",
+            "q-transfer"
+          ]
+        },
+        "questions": [
+          {
+            "id": "name",
+            "conceptId": "identity",
+            "type": "choice",
+            "prompt": "Mai muốn nói tên mình. Câu nào đúng ý đó?",
+            "stimulus": "Bạn gặp người mới trong lớp tiếng Nhật.",
+            "options": [
+              {
+                "id": "country",
+                "text": "ベトナムから来ました。",
+                "why": "Câu này nói nơi đến từ, chưa nói tên."
+              },
+              {
+                "id": "name",
+                "text": "グエン・マイです。",
+                "why": "Tên + です là cách giới thiệu tên lịch sự, gọn."
+              },
+              {
+                "id": "job",
+                "text": "学生です。",
+                "why": "Câu này nói vai trò học sinh/sinh viên, chưa nói tên."
+              }
+            ],
+            "answer": "name",
+            "hint": "Tìm câu có tên của người đang tự giới thiệu.",
+            "explanation": "グエン・マイです。 là “Tôi là Nguyễn Mai”. Khi ai cũng hiểu bạn đang nói về mình, có thể bỏ わたしは. Không thêm さん sau tên khi tự giới thiệu.",
+            "repairId": "name-repair"
+          },
+          {
+            "id": "wa",
+            "conceptId": "topic-wa",
+            "type": "choice",
+            "prompt": "Trong câu này, は được đọc thế nào?",
+            "stimulus": "わたしは学生です。",
+            "options": [
+              {
+                "id": "ha",
+                "text": "ha",
+                "why": "ha là cách đọc chữ は trong bảng Kana; ở đây nó làm trợ từ."
+              },
+              {
+                "id": "wa",
+                "text": "wa",
+                "why": "は làm trợ từ nêu chủ đề nên đọc là wa."
+              },
+              {
+                "id": "wo",
+                "text": "wo",
+                "why": "wo không phải cách đọc của は trong câu này."
+              }
+            ],
+            "answer": "wa",
+            "hint": "Ở đây は đứng sau わたし để nêu chủ đề, không nằm trong một từ.",
+            "explanation": "は ở đây nêu chủ đề “về tôi thì…” và được đọc là wa. Chữ は trong từ khác vẫn có thể đọc ha; không đổi mọi chữ は thành wa.",
+            "repairId": "wa-repair"
+          },
+          {
+            "id": "order",
+            "conceptId": "sentence-order",
+            "type": "order",
+            "prompt": "Ghép câu “Tôi là học sinh/sinh viên”.",
+            "stimulus": "Chạm từng mảnh theo thứ tự. Chạm mảnh đã chọn để bỏ ra.",
+            "tokens": [
+              {
+                "id": "watashi",
+                "text": "わたし"
+              },
+              {
+                "id": "wa",
+                "text": "は"
+              },
+              {
+                "id": "student",
+                "text": "学生"
+              },
+              {
+                "id": "desu",
+                "text": "です"
+              }
+            ],
+            "answer": [
+              "watashi",
+              "wa",
+              "student",
+              "desu"
+            ],
+            "hint": "Nêu chủ đề trước, rồi thông tin về chủ đề. です đứng cuối.",
+            "explanation": "わたし → は → 学生 → です。 Chủ đề đứng trước は, thông tin 学生 theo sau. Đây là mẫu câu lịch sự, không cần thêm động từ “là” nào khác.",
+            "repairId": "order-repair"
+          },
+          {
+            "id": "question",
+            "conceptId": "polite-question",
+            "type": "choice",
+            "prompt": "Aoi muốn hỏi Mai có phải là học sinh/sinh viên. Chọn câu hỏi lịch sự.",
+            "stimulus": "Aoi đang nói trực tiếp với Mai.",
+            "options": [
+              {
+                "id": "statement",
+                "text": "マイさんは学生です。",
+                "why": "Câu kết thúc ở です là câu khẳng định trong mẫu đang học."
+              },
+              {
+                "id": "ask",
+                "text": "マイさんは学生ですか。",
+                "why": "か ở cuối biến mẫu câu lịch sự này thành câu hỏi."
+              },
+              {
+                "id": "country",
+                "text": "マイさんはベトナムから来ました。",
+                "why": "Đây là thông tin về xuất xứ, không phải câu hỏi về vai trò."
+              }
+            ],
+            "answer": "ask",
+            "hint": "Tìm dấu hiệu hỏi ở cuối câu, không chỉ nhìn từ 学生.",
+            "explanation": "Thêm か sau です để hỏi lịch sự: 学生ですか。 Có thể dùng さん khi gọi Mai; không thêm さん sau tên khi tự giới thiệu mình.",
+            "repairId": "question-repair"
+          },
+          {
+            "id": "origin",
+            "conceptId": "origin",
+            "type": "choice",
+            "prompt": "Mai muốn nói mình đến từ Việt Nam. Chọn đúng ý.",
+            "stimulus": "Mai đang giới thiệu xuất xứ, không nói kế hoạch đi đâu.",
+            "options": [
+              {
+                "id": "from",
+                "text": "ベトナムから来ました。",
+                "why": "から chỉ nơi xuất phát; 来ました là đã đến."
+              },
+              {
+                "id": "to",
+                "text": "ベトナムへ行きます。",
+                "why": "Câu này nói sẽ/đi đến Việt Nam, ngược hướng điều cần nói."
+              },
+              {
+                "id": "student",
+                "text": "学生です。",
+                "why": "Câu này nói vai trò, không nói nơi đến từ."
+              }
+            ],
+            "answer": "from",
+            "hint": "Phân biệt nơi xuất phát với nơi sẽ đi đến.",
+            "explanation": "ベトナムから来ました。 là “Tôi đến từ Việt Nam”. Học cả cụm này trong lời giới thiệu; chưa cần học toàn bộ cách chia 来る ở phiên đầu.",
+            "repairId": "origin-repair"
+          },
+          {
+            "id": "transfer",
+            "conceptId": "identity",
+            "type": "choice",
+            "prompt": "Một người mới nói “リーです。” Bạn vừa biết điều gì?",
+            "stimulus": "はじめまして。リーです。よろしくお願いします。",
+            "options": [
+              {
+                "id": "name",
+                "text": "Tên người ấy là Lee.",
+                "why": "Tên + です có cùng cách dùng dù đổi tên và hoàn cảnh."
+              },
+              {
+                "id": "teacher",
+                "text": "Người ấy là giáo viên.",
+                "why": "Không có thông tin về nghề nghiệp trong câu."
+              },
+              {
+                "id": "origin",
+                "text": "Người ấy đến từ Việt Nam.",
+                "why": "Câu chưa nói xuất xứ."
+              }
+            ],
+            "answer": "name",
+            "hint": "Chỉ dùng thông tin thực sự xuất hiện, không đoán nghề hay quốc tịch.",
+            "explanation": "リーです。 đang giới thiệu tên. Nhận ra mẫu trong một ngữ cảnh mới có ích hơn chỉ nhớ vị trí đáp án, nhưng một câu vẫn chưa chứng minh đã nhớ bền.",
+            "repairId": "name-repair"
+          },
+          {
+            "id": "name-repair",
+            "conceptId": "identity",
+            "type": "choice",
+            "prompt": "Lần này chỉ chọn lời tự giới thiệu tên Mai.",
+            "stimulus": "Bạn đóng vai Mai, không giới thiệu một người khác.",
+            "options": [
+              {
+                "id": "self",
+                "text": "マイです。",
+                "why": "Đúng: tên của mình + です."
+              },
+              {
+                "id": "honorific",
+                "text": "マイさんです。",
+                "why": "さん dùng khi gọi/nhắc người khác, không gắn sau tên mình trong lời tự giới thiệu này."
+              },
+              {
+                "id": "role",
+                "text": "学生です。",
+                "why": "Đúng ngữ pháp nhưng chỉ nói vai trò, chưa nói tên."
+              }
+            ],
+            "answer": "self",
+            "hint": "Không thêm さん vào tên của chính mình.",
+            "explanation": "マイです。 là đủ để tự nói tên. Câu này là lượt luyện sửa lỗi mới; kết quả đầu tiên được giữ nguyên."
+          },
+          {
+            "id": "wa-repair",
+            "conceptId": "topic-wa",
+            "type": "choice",
+            "prompt": "Đổi câu, giữ cùng một vai trò của は. Đọc thế nào?",
+            "stimulus": "わたしはマイです。",
+            "options": [
+              {
+                "id": "wa",
+                "text": "wa",
+                "why": "Vẫn là trợ từ nêu chủ đề, nên đọc wa."
+              },
+              {
+                "id": "ha",
+                "text": "ha",
+                "why": "Ở đây は không phải một phần từ vựng."
+              },
+              {
+                "id": "ma",
+                "text": "ma",
+                "why": "ma là cách đọc ま, không phải は."
+              }
+            ],
+            "answer": "wa",
+            "hint": "Vai trò của は giống câu vừa học, dù thông tin phía sau thay đổi.",
+            "explanation": "Nội dung phía sau đổi từ 学生 sang マイ; vai trò của は không đổi. Hãy nhận ra chức năng, không chỉ nhớ cả câu."
+          },
+          {
+            "id": "question-repair",
+            "conceptId": "polite-question",
+            "type": "choice",
+            "prompt": "Người đối diện vừa nhắc tới việc đi học. Bạn muốn hỏi lại, không khẳng định.",
+            "stimulus": "Chủ đề đã rõ, có thể lược phần đứng trước.",
+            "options": [
+              {
+                "id": "ask",
+                "text": "学生ですか。",
+                "why": "Có か nên là câu hỏi lịch sự trong mẫu này."
+              },
+              {
+                "id": "tell",
+                "text": "学生です。",
+                "why": "Đây là lời khẳng định, không phải điều cần hỏi."
+              },
+              {
+                "id": "from",
+                "text": "ベトナムから来ました。",
+                "why": "Nói xuất xứ, không hỏi vai trò."
+              }
+            ],
+            "answer": "ask",
+            "hint": "Chú ý phần cuối です…",
+            "explanation": "Khi chủ đề đã rõ, 学生ですか。 vẫn là câu hỏi tự nhiên. か làm rõ ý hỏi của mẫu này."
+          },
+          {
+            "id": "origin-repair",
+            "conceptId": "origin",
+            "type": "choice",
+            "prompt": "Mai được hỏi mình đến từ đâu. Câu nào trả lời đúng hướng?",
+            "stimulus": "Nói về nơi xuất phát, không nói nơi sắp đi.",
+            "options": [
+              {
+                "id": "from",
+                "text": "ベトナムから来ました。",
+                "why": "Đúng: đến từ Việt Nam."
+              },
+              {
+                "id": "go",
+                "text": "ベトナムへ行きます。",
+                "why": "Đây là đi tới Việt Nam."
+              },
+              {
+                "id": "name",
+                "text": "マイです。",
+                "why": "Câu này nói tên."
+              }
+            ],
+            "answer": "from",
+            "hint": "から chỉ nơi xuất phát.",
+            "explanation": "Giữ cụm から来ました khi muốn nói “đến từ”. Lượt sửa lỗi không thay thế câu trả lời đầu tiên."
+          },
+          {
+            "id": "order-repair",
+            "conceptId": "sentence-order",
+            "type": "choice",
+            "prompt": "Chọn thứ tự đúng để nói “Tôi là nhân viên công ty”.",
+            "stimulus": "Lần này vai trò là 会社員, không phải 学生.",
+            "options": [
+              {
+                "id": "topic-first",
+                "text": "わたしは会社員です。",
+                "why": "Chủ đề わたし đứng trước は, rồi đến thông tin 会社員 và です."
+              },
+              {
+                "id": "desu-middle",
+                "text": "わたしです会社員は。",
+                "why": "です kết thúc mẫu câu; は theo sau chủ đề, không đặt cuối câu như vậy."
+              },
+              {
+                "id": "topic-last",
+                "text": "はわたし会社員です。",
+                "why": "は là trợ từ đi sau chủ đề わたし, không đặt trước nó."
+              }
+            ],
+            "answer": "topic-first",
+            "hint": "Tìm thứ tự: chủ đề → は → thông tin → です.",
+            "explanation": "わたしは会社員です。 Giữ đúng thứ tự vừa học dù thay 学生 bằng 会社員. Đây là câu luyện sửa lỗi mới, không thay kết quả ghép câu trước đó."
+          }
+        ],
+        "locale": "vi",
+        "translationKey": "lesson.n5-introduction.v2",
+        "explanationLocale": "vi",
+        "storyTitle": "Ở lớp tiếng Nhật của cô Aoi.",
+        "storyIntro": "Mai là du học sinh Việt Nam, đang học cùng cô Aoi. Đọc trước để nắm ý; chưa cần nhớ hết.",
+        "headline": [
+          "Một lời chào.",
+          "Một kết nối mới."
+        ],
+        "lead": "Giới thiệu bản thân cùng Mai và cô Aoi.",
+        "engine": "lesson/v1",
+        "template": "self-introduction/v1"
+      },
+      "updatedAt": null,
+      "review": {
+        "by": "",
+        "rights": "original",
+        "note": "",
+        "confirmed": false
+      }
+    },
+    {
+      "id": "sample-intro-extension",
+      "status": "draft",
+      "revision": 0,
+      "baseVersion": 0,
+      "content": {
+        "id": "n5-introduction-extension",
+        "version": 1,
+        "title": "Giới thiệu bản thân · Bản mở rộng",
+        "level": "N5",
+        "status": "authored-sample",
+        "scope": "Nội dung đọc tự biên soạn để thử một vòng học hoàn chỉnh. Chưa có audio hoặc chấm nói; không phải đề JLPT.",
+        "sourceNote": "Đối chiếu mục tiêu và cách dùng sơ cấp với Irodori Starter, Lesson 3 (Japan Foundation); hội thoại và câu hỏi biên soạn riêng.",
+        "sourceUrl": "https://www.irodori.jpf.go.jp/assets/data/starter/pdf/X_L03.pdf",
+        "readings": {
+          "学生": "がくせい",
+          "佐藤": "さとう",
+          "来": "き",
+          "会社員": "かいしゃいん",
+          "日本": "にほん",
+          "願": "ねが"
+        },
+        "cast": [
+          {
+            "id": "mai",
+            "name": "Mai",
+            "role": "Du học sinh · nhân viên bán thời gian",
+            "jp": "グエン・マイ"
+          },
+          {
+            "id": "aoi",
+            "name": "Aoi",
+            "role": "Giáo viên tiếng Nhật",
+            "jp": "佐藤あおい"
+          }
+        ],
+        "story": [
+          {
+            "speaker": "mai",
+            "text": "はじめまして。グエン・マイです。ベトナムから来ました。",
+            "meaning": "Lần đầu gặp bạn. Tôi là Nguyễn Mai. Tôi đến từ Việt Nam."
+          },
+          {
+            "speaker": "aoi",
+            "text": "佐藤あおいです。よろしくお願いします。マイさんは学生ですか。",
+            "meaning": "Tôi là Sato Aoi. Rất vui được làm quen. Mai là học sinh/sinh viên phải không?"
+          },
+          {
+            "speaker": "mai",
+            "text": "はい、学生です。よろしくお願いします。",
+            "meaning": "Vâng, tôi là sinh viên. Rất vui được làm quen."
+          }
+        ],
+        "concepts": [
+          {
+            "id": "identity",
+            "name": "Giới thiệu tên & vai trò",
+            "questionId": "name-repair",
+            "reading": "Tên + です"
+          },
+          {
+            "id": "topic-wa",
+            "name": "は khi làm trợ từ",
+            "questionId": "wa-repair",
+            "reading": "は → wa trong vai trò nêu chủ đề"
+          },
+          {
+            "id": "polite-question",
+            "name": "Hỏi lịch sự với ですか",
+            "questionId": "question-repair",
+            "reading": "...ですか。"
+          },
+          {
+            "id": "origin",
+            "name": "Nói nơi đến từ",
+            "questionId": "origin-repair",
+            "reading": "...から来ました。"
+          },
+          {
+            "id": "sentence-order",
+            "name": "Thứ tự câu với は và です",
+            "questionId": "order-repair",
+            "reading": "Chủ đề → は → thông tin → です"
+          }
+        ],
+        "cards": {
+          "identity": {
+            "title": "Một mẫu nhỏ, dùng được ngay.",
+            "example": "わたしは学生です。",
+            "meaning": "Tôi là học sinh / sinh viên.",
+            "pattern": "[Chủ đề] は [Thông tin] です。",
+            "points": [
+              "は nêu chủ đề và đọc là wa trong câu này.",
+              "です kết thúc mẫu câu lịch sự; không đọc là một từ “là” đứng riêng.",
+              "Để nói tên: グエン・マイです。 Khi bối cảnh đã rõ, không cần lặp わたしは."
+            ],
+            "pitfall": "Không thêm さん sau tên mình khi tự giới thiệu."
+          },
+          "question": {
+            "title": "Hỏi bằng một chi tiết ở cuối câu.",
+            "example": "マイさんは学生ですか。",
+            "meaning": "Mai là học sinh / sinh viên phải không?",
+            "pattern": "[Chủ đề] は [Thông tin] ですか。",
+            "points": [
+              "か ở cuối tạo câu hỏi lịch sự trong mẫu này.",
+              "Trả lời ngắn: はい、学生です。",
+              "さん là cách gọi lịch sự người khác; không dùng để tự gọi mình."
+            ],
+            "pitfall": "Đọc tới cuối câu. Đừng bỏ qua か rồi hiểu câu hỏi thành khẳng định."
+          },
+          "origin": {
+            "title": "Nói mình đến từ đâu.",
+            "example": "ベトナムから来ました。",
+            "meaning": "Tôi đến từ Việt Nam.",
+            "pattern": "[Nơi xuất phát] から来ました。",
+            "points": [
+              "から cho biết nơi xuất phát.",
+              "Học cả cụm から来ました trong lời giới thiệu trước.",
+              "Kết lại bằng よろしくお願いします。 như một lời làm quen lịch sự."
+            ],
+            "pitfall": "へ行きます là đi tới; khác hướng với から来ました."
+          }
+        },
+        "units": {
+          "story": {
+            "type": "story",
+            "label": "Gặp Mai & Aoi",
+            "seconds": 60
+          },
+          "identity": {
+            "type": "learn",
+            "cardId": "identity",
+            "label": "Tên & vai trò",
+            "seconds": 60
+          },
+          "question": {
+            "type": "learn",
+            "cardId": "question",
+            "label": "Hỏi lịch sự",
+            "seconds": 60
+          },
+          "origin": {
+            "type": "learn",
+            "cardId": "origin",
+            "label": "Nơi đến từ",
+            "seconds": 60
+          },
+          "q-name": {
+            "type": "question",
+            "questionId": "name",
+            "label": "Gọi lại mẫu câu",
+            "seconds": 45
+          },
+          "q-wa": {
+            "type": "question",
+            "questionId": "wa",
+            "label": "Nhận ra vai trò は",
+            "seconds": 45
+          },
+          "q-order": {
+            "type": "question",
+            "questionId": "order",
+            "label": "Ghép câu",
+            "seconds": 90
+          },
+          "q-question": {
+            "type": "question",
+            "questionId": "question",
+            "label": "Đặt câu hỏi",
+            "seconds": 60
+          },
+          "q-origin": {
+            "type": "question",
+            "questionId": "origin",
+            "label": "Phân biệt xuất xứ",
+            "seconds": 60
+          },
+          "personal": {
+            "type": "personal",
+            "label": "Dùng với thông tin của bạn",
+            "seconds": 60
+          },
+          "q-transfer": {
+            "type": "question",
+            "questionId": "transfer",
+            "label": "Thử ngữ cảnh mới",
+            "seconds": 60
+          }
+        },
+        "plans": {
+          "3": [
+            "identity",
+            "q-name",
+            "q-wa"
+          ],
+          "5": [
+            "story",
+            "identity",
+            "q-name",
+            "q-wa",
+            "personal"
+          ],
+          "15": [
+            "story",
+            "identity",
+            "question",
+            "origin",
+            "q-name",
+            "q-wa",
+            "q-order",
+            "q-question",
+            "q-origin",
+            "personal",
+            "q-transfer"
+          ]
+        },
+        "questions": [
+          {
+            "id": "name",
+            "conceptId": "identity",
+            "type": "choice",
+            "prompt": "Mai muốn nói tên mình. Câu nào đúng ý đó?",
+            "stimulus": "Bạn gặp người mới trong lớp tiếng Nhật.",
+            "options": [
+              {
+                "id": "country",
+                "text": "ベトナムから来ました。",
+                "why": "Câu này nói nơi đến từ, chưa nói tên."
+              },
+              {
+                "id": "name",
+                "text": "グエン・マイです。",
+                "why": "Tên + です là cách giới thiệu tên lịch sự, gọn."
+              },
+              {
+                "id": "job",
+                "text": "学生です。",
+                "why": "Câu này nói vai trò học sinh/sinh viên, chưa nói tên."
+              }
+            ],
+            "answer": "",
+            "hint": "Tìm câu có tên của người đang tự giới thiệu.",
+            "explanation": "",
+            "repairId": "name-repair"
+          },
+          {
+            "id": "wa",
+            "conceptId": "topic-wa",
+            "type": "choice",
+            "prompt": "Trong câu này, は được đọc thế nào?",
+            "stimulus": "わたしは学生です。",
+            "options": [
+              {
+                "id": "ha",
+                "text": "ha",
+                "why": "ha là cách đọc chữ は trong bảng Kana; ở đây nó làm trợ từ."
+              },
+              {
+                "id": "wa",
+                "text": "wa",
+                "why": "は làm trợ từ nêu chủ đề nên đọc là wa."
+              },
+              {
+                "id": "wo",
+                "text": "wo",
+                "why": "wo không phải cách đọc của は trong câu này."
+              }
+            ],
+            "answer": "wa",
+            "hint": "Ở đây は đứng sau わたし để nêu chủ đề, không nằm trong một từ.",
+            "explanation": "は ở đây nêu chủ đề “về tôi thì…” và được đọc là wa. Chữ は trong từ khác vẫn có thể đọc ha; không đổi mọi chữ は thành wa.",
+            "repairId": "wa-repair"
+          },
+          {
+            "id": "order",
+            "conceptId": "sentence-order",
+            "type": "order",
+            "prompt": "Ghép câu “Tôi là học sinh/sinh viên”.",
+            "stimulus": "Chạm từng mảnh theo thứ tự. Chạm mảnh đã chọn để bỏ ra.",
+            "tokens": [
+              {
+                "id": "watashi",
+                "text": "わたし"
+              },
+              {
+                "id": "wa",
+                "text": "は"
+              },
+              {
+                "id": "student",
+                "text": "学生"
+              },
+              {
+                "id": "desu",
+                "text": "です"
+              }
+            ],
+            "answer": [
+              "watashi",
+              "wa",
+              "student",
+              "desu"
+            ],
+            "hint": "Nêu chủ đề trước, rồi thông tin về chủ đề. です đứng cuối.",
+            "explanation": "わたし → は → 学生 → です。 Chủ đề đứng trước は, thông tin 学生 theo sau. Đây là mẫu câu lịch sự, không cần thêm động từ “là” nào khác.",
+            "repairId": "order-repair"
+          },
+          {
+            "id": "question",
+            "conceptId": "polite-question",
+            "type": "choice",
+            "prompt": "Aoi muốn hỏi Mai có phải là học sinh/sinh viên. Chọn câu hỏi lịch sự.",
+            "stimulus": "Aoi đang nói trực tiếp với Mai.",
+            "options": [
+              {
+                "id": "statement",
+                "text": "マイさんは学生です。",
+                "why": "Câu kết thúc ở です là câu khẳng định trong mẫu đang học."
+              },
+              {
+                "id": "ask",
+                "text": "マイさんは学生ですか。",
+                "why": "か ở cuối biến mẫu câu lịch sự này thành câu hỏi."
+              },
+              {
+                "id": "country",
+                "text": "マイさんはベトナムから来ました。",
+                "why": "Đây là thông tin về xuất xứ, không phải câu hỏi về vai trò."
+              }
+            ],
+            "answer": "ask",
+            "hint": "Tìm dấu hiệu hỏi ở cuối câu, không chỉ nhìn từ 学生.",
+            "explanation": "Thêm か sau です để hỏi lịch sự: 学生ですか。 Có thể dùng さん khi gọi Mai; không thêm さん sau tên khi tự giới thiệu mình.",
+            "repairId": "question-repair"
+          },
+          {
+            "id": "origin",
+            "conceptId": "origin",
+            "type": "choice",
+            "prompt": "Mai muốn nói mình đến từ Việt Nam. Chọn đúng ý.",
+            "stimulus": "Mai đang giới thiệu xuất xứ, không nói kế hoạch đi đâu.",
+            "options": [
+              {
+                "id": "from",
+                "text": "ベトナムから来ました。",
+                "why": "から chỉ nơi xuất phát; 来ました là đã đến."
+              },
+              {
+                "id": "to",
+                "text": "ベトナムへ行きます。",
+                "why": "Câu này nói sẽ/đi đến Việt Nam, ngược hướng điều cần nói."
+              },
+              {
+                "id": "student",
+                "text": "学生です。",
+                "why": "Câu này nói vai trò, không nói nơi đến từ."
+              }
+            ],
+            "answer": "from",
+            "hint": "Phân biệt nơi xuất phát với nơi sẽ đi đến.",
+            "explanation": "ベトナムから来ました。 là “Tôi đến từ Việt Nam”. Học cả cụm này trong lời giới thiệu; chưa cần học toàn bộ cách chia 来る ở phiên đầu.",
+            "repairId": "origin-repair"
+          },
+          {
+            "id": "transfer",
+            "conceptId": "identity",
+            "type": "choice",
+            "prompt": "Một người mới nói “リーです。” Bạn vừa biết điều gì?",
+            "stimulus": "はじめまして。リーです。よろしくお願いします。",
+            "options": [
+              {
+                "id": "name",
+                "text": "Tên người ấy là Lee.",
+                "why": "Tên + です có cùng cách dùng dù đổi tên và hoàn cảnh."
+              },
+              {
+                "id": "teacher",
+                "text": "Người ấy là giáo viên.",
+                "why": "Không có thông tin về nghề nghiệp trong câu."
+              },
+              {
+                "id": "origin",
+                "text": "Người ấy đến từ Việt Nam.",
+                "why": "Câu chưa nói xuất xứ."
+              }
+            ],
+            "answer": "name",
+            "hint": "Chỉ dùng thông tin thực sự xuất hiện, không đoán nghề hay quốc tịch.",
+            "explanation": "リーです。 đang giới thiệu tên. Nhận ra mẫu trong một ngữ cảnh mới có ích hơn chỉ nhớ vị trí đáp án, nhưng một câu vẫn chưa chứng minh đã nhớ bền.",
+            "repairId": "name-repair"
+          },
+          {
+            "id": "name-repair",
+            "conceptId": "identity",
+            "type": "choice",
+            "prompt": "Lần này chỉ chọn lời tự giới thiệu tên Mai.",
+            "stimulus": "Bạn đóng vai Mai, không giới thiệu một người khác.",
+            "options": [
+              {
+                "id": "self",
+                "text": "マイです。",
+                "why": "Đúng: tên của mình + です."
+              },
+              {
+                "id": "honorific",
+                "text": "マイさんです。",
+                "why": "さん dùng khi gọi/nhắc người khác, không gắn sau tên mình trong lời tự giới thiệu này."
+              },
+              {
+                "id": "role",
+                "text": "学生です。",
+                "why": "Đúng ngữ pháp nhưng chỉ nói vai trò, chưa nói tên."
+              }
+            ],
+            "answer": "self",
+            "hint": "Không thêm さん vào tên của chính mình.",
+            "explanation": "マイです。 là đủ để tự nói tên. Câu này là lượt luyện sửa lỗi mới; kết quả đầu tiên được giữ nguyên."
+          },
+          {
+            "id": "wa-repair",
+            "conceptId": "topic-wa",
+            "type": "choice",
+            "prompt": "Đổi câu, giữ cùng một vai trò của は. Đọc thế nào?",
+            "stimulus": "わたしはマイです。",
+            "options": [
+              {
+                "id": "wa",
+                "text": "wa",
+                "why": "Vẫn là trợ từ nêu chủ đề, nên đọc wa."
+              },
+              {
+                "id": "ha",
+                "text": "ha",
+                "why": "Ở đây は không phải một phần từ vựng."
+              },
+              {
+                "id": "ma",
+                "text": "ma",
+                "why": "ma là cách đọc ま, không phải は."
+              }
+            ],
+            "answer": "wa",
+            "hint": "Vai trò của は giống câu vừa học, dù thông tin phía sau thay đổi.",
+            "explanation": "Nội dung phía sau đổi từ 学生 sang マイ; vai trò của は không đổi. Hãy nhận ra chức năng, không chỉ nhớ cả câu."
+          },
+          {
+            "id": "question-repair",
+            "conceptId": "polite-question",
+            "type": "choice",
+            "prompt": "Người đối diện vừa nhắc tới việc đi học. Bạn muốn hỏi lại, không khẳng định.",
+            "stimulus": "Chủ đề đã rõ, có thể lược phần đứng trước.",
+            "options": [
+              {
+                "id": "ask",
+                "text": "学生ですか。",
+                "why": "Có か nên là câu hỏi lịch sự trong mẫu này."
+              },
+              {
+                "id": "tell",
+                "text": "学生です。",
+                "why": "Đây là lời khẳng định, không phải điều cần hỏi."
+              },
+              {
+                "id": "from",
+                "text": "ベトナムから来ました。",
+                "why": "Nói xuất xứ, không hỏi vai trò."
+              }
+            ],
+            "answer": "ask",
+            "hint": "Chú ý phần cuối です…",
+            "explanation": "Khi chủ đề đã rõ, 学生ですか。 vẫn là câu hỏi tự nhiên. か làm rõ ý hỏi của mẫu này."
+          },
+          {
+            "id": "origin-repair",
+            "conceptId": "origin",
+            "type": "choice",
+            "prompt": "Mai được hỏi mình đến từ đâu. Câu nào trả lời đúng hướng?",
+            "stimulus": "Nói về nơi xuất phát, không nói nơi sắp đi.",
+            "options": [
+              {
+                "id": "from",
+                "text": "ベトナムから来ました。",
+                "why": "Đúng: đến từ Việt Nam."
+              },
+              {
+                "id": "go",
+                "text": "ベトナムへ行きます。",
+                "why": "Đây là đi tới Việt Nam."
+              },
+              {
+                "id": "name",
+                "text": "マイです。",
+                "why": "Câu này nói tên."
+              }
+            ],
+            "answer": "from",
+            "hint": "から chỉ nơi xuất phát.",
+            "explanation": "Giữ cụm から来ました khi muốn nói “đến từ”. Lượt sửa lỗi không thay thế câu trả lời đầu tiên."
+          },
+          {
+            "id": "order-repair",
+            "conceptId": "sentence-order",
+            "type": "choice",
+            "prompt": "Chọn thứ tự đúng để nói “Tôi là nhân viên công ty”.",
+            "stimulus": "Lần này vai trò là 会社員, không phải 学生.",
+            "options": [
+              {
+                "id": "topic-first",
+                "text": "わたしは会社員です。",
+                "why": "Chủ đề わたし đứng trước は, rồi đến thông tin 会社員 và です."
+              },
+              {
+                "id": "desu-middle",
+                "text": "わたしです会社員は。",
+                "why": "です kết thúc mẫu câu; は theo sau chủ đề, không đặt cuối câu như vậy."
+              },
+              {
+                "id": "topic-last",
+                "text": "はわたし会社員です。",
+                "why": "は là trợ từ đi sau chủ đề わたし, không đặt trước nó."
+              }
+            ],
+            "answer": "topic-first",
+            "hint": "Tìm thứ tự: chủ đề → は → thông tin → です.",
+            "explanation": "わたしは会社員です。 Giữ đúng thứ tự vừa học dù thay 学生 bằng 会社員. Đây là câu luyện sửa lỗi mới, không thay kết quả ghép câu trước đó."
+          }
+        ],
+        "locale": "vi",
+        "translationKey": "lesson.n5-introduction-extension.v1",
+        "explanationLocale": "vi",
+        "storyTitle": "Ở lớp tiếng Nhật của cô Aoi.",
+        "storyIntro": "Mai là du học sinh Việt Nam, đang học cùng cô Aoi. Đọc trước để nắm ý; chưa cần nhớ hết.",
+        "headline": [
+          "Một lời chào.",
+          "Một kết nối mới."
+        ],
+        "lead": "Giới thiệu bản thân cùng Mai và cô Aoi.",
+        "engine": "lesson/v1",
+        "template": "self-introduction/v1"
+      },
+      "updatedAt": null,
+      "review": {
+        "by": "",
+        "rights": "original",
+        "note": "",
+        "confirmed": false
+      }
+    }
+  ]
+}

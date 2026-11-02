@@ -1,0 +1,19 @@
+NIHONGO PATH — Kana Audio Attribution (CC BY 4.0)
+
+Recording origin: FUN Japanese Learning (https://funjapaneselearning.com)
+Dataset curation and distribution: Arsalan Anwari, Kana Sounds
+Dataset: https://huggingface.co/datasets/arsalan-anwari/kana-sounds
+License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+License text: https://creativecommons.org/licenses/by/4.0/
+
+Use in Nihongo Path:
+- 46 short seion pronunciation MP3 clips under audio/seion/
+- Original audio clips are redistributed unmodified, named by romaji
+- The same sound is used for the matching Hiragana and Katakana characters
+- Audio belongs to its original creators; Nihongo Path does not claim ownership
+- No speech/video modification is made by Nihongo Path; files are copied as provided
+- Source provenance and terms should be reviewed before public distribution
+
+The app code/UI and other data have separate licenses.
+
+This notice must accompany the static site when deploying the audio.

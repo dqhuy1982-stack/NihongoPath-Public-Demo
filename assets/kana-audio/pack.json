@@ -1,0 +1,11 @@
+﻿{
+    "schemaVersion":  1,
+    "audioFormat":  "mp3",
+    "sounds":  46,
+    "source":  "https://huggingface.co/datasets/arsalan-anwari/kana-sounds",
+    "recordingOrigin":  "FUN Japanese Learning",
+    "datasetMaintainer":  "Arsalan Anwari",
+    "license":  "CC BY 4.0",
+    "sourceGroup":  "seion",
+    "status":  "Complete local pack; physical iPhone QA pending"
+}
