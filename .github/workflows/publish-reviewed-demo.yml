@@ -1,0 +1,137 @@
+name: NIHONGO PATH - Review and Publish Demo
+
+on:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: "Publish reviewed build to GitHub Pages? (unchecked = QA only)"
+        type: boolean
+        required: true
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: nihongo-pages-manual-publish
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Verify private source and prepare static demo
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check private source read token
+        env:
+          READ_TOKEN: ${{ secrets.NIHONGO_SOURCE_READ_TOKEN }}
+        run: |
+          if [ -z "$READ_TOKEN" ]; then
+            echo "::error::Missing repository secret NIHONGO_SOURCE_READ_TOKEN."
+            exit 1
+          fi
+
+      - name: Checkout private develop
+        uses: actions/checkout@v4
+        with:
+          repository: dqhuy1982-stack/NihongoPath
+          ref: develop
+          path: private-source
+          token: ${{ secrets.NIHONGO_SOURCE_READ_TOKEN }}
+          persist-credentials: false
+          fetch-depth: 1
+
+      - name: Report source commit
+        working-directory: private-source
+        run: git rev-parse HEAD
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+
+      - name: Test Kana learning logic and geometry
+        working-directory: private-source
+        run: |
+          node --test tests/kana-recall.test.cjs tests/kana-stroke-view.test.cjs
+          node --check source/public/kana-studio.js
+          node --check source/public/kana-recall.js
+          node --check source/public/kana-stroke-view.js
+
+      - name: Build demo-only artifact
+        working-directory: private-source
+        run: node scripts/build-public-preview.cjs
+
+      - name: Check public artifact for missing assets and secrets
+        working-directory: private-source
+        run: |
+          node <<'NODE'
+          const fs = require("node:fs"), path = require("node:path");
+          const root = path.resolve("dist/public-preview");
+          const expected = ["index.html", "kana-studio.js", "kana-stroke-view.js",
+            "kana-recall.js", "kana-recall-model.js", "kana-recall.css",
+            "assets/kana-audio/pack.json", ".nojekyll"];
+          for (const file of expected)
+            if (!fs.existsSync(path.join(root,file))) throw Error("Missing: "+file);
+          const audio = fs.readdirSync(path.join(root,"assets/kana-audio"))
+            .filter(f => f.endsWith(".mp3"));
+          if (audio.length !== 46) throw Error("Expected 46 MP3 clips.");
+          const html = fs.readFileSync(path.join(root,"index.html"),"utf8");
+          if (!html.includes('src="kana-stroke-view.js"') ||
+              !html.includes('src="kana-recall.js"') ||
+              !html.includes('mode') || !html.includes('demo'))
+            throw Error("Invalid demo HTML.");
+          const risky = [
+            /gh[pousr]_[a-zA-Z0-9]{25,}/,
+            /github_pat_[a-zA-Z0-9_]{30,}/,
+            /AIza[a-zA-Z0-9_-]{30,}/,
+            /-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----/,
+            /sk-(?:proj-)?[a-zA-Z0-9_-]{30,}/,
+            /@marriott\.com/i
+          ];
+          const textExt=new Set([".html",".js",".json",".css",".svg",".txt",".webmanifest"]);
+          const blocked=/(^|\/)(?:server|db|drizzle|worker|private|node_modules|\.git)(\/|$)|(?:^|\/)\.env(?:\.|$)/i;
+          let count=0;
+          function walk(dir){
+            for(const item of fs.readdirSync(dir,{withFileTypes:true})){
+              const full=path.join(dir,item.name);
+              const rel=path.relative(root,full).split(path.sep).join("/");
+              if(blocked.test(rel)||/\.(?:pem|pfx|p12|key)$/i.test(rel))
+                throw Error("Forbidden export path: "+rel);
+              if(item.isDirectory()){walk(full);continue;}
+              if(!item.isFile())throw Error("Non-file in export: "+rel);
+              count++;
+              if(!textExt.has(path.extname(rel).toLowerCase()))continue;
+              if(risky.some(re=>re.test(fs.readFileSync(full,"utf8"))))
+                throw Error("Possible sensitive content in: "+rel);
+            }
+          }
+          walk(root);
+          if(count<200)throw Error("Export unexpectedly small.");
+          console.log("Static export preflight passed:",count,"files.");
+          NODE
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: private-source/dist/public-preview
+
+  deploy:
+    name: Publish only after explicit approval
+    if: ${{ inputs.publish }}
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Deploy approved demo
+        id: deployment
+        uses: actions/deploy-pages@v4
