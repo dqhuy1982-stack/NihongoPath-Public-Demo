@@ -96,8 +96,9 @@ jobs:
             .filter(f => f.endsWith(".mp3"));
           if (audio.length !== 46) throw Error("Expected 46 MP3 clips.");
           const html = fs.readFileSync(path.join(root,"index.html"),"utf8");
-          if (!html.includes('src="kana-stroke-view.js"') ||
-              !html.includes('src="kana-recall.js"') ||
+          if (!html.includes('src="kana-stroke-view.js?v=') ||
+              !html.includes('src="kana-recall.js?v=') ||
+              !html.includes('href="kana-studio.css?v=') ||
               !html.includes('mode') || !html.includes('demo'))
             throw Error("Invalid demo HTML.");
           const risky = [
