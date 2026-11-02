@@ -72,7 +72,7 @@ jobs:
       - name: Test Kana learning logic and geometry
         working-directory: private-source
         run: |
-          node --test tests/kana-recall.test.cjs tests/kana-stroke-view.test.cjs
+          node --test tests/kana-recall.test.cjs tests/kana-stroke-view.test.cjs tests/kana-speed-control.test.cjs
           node --check source/public/kana-studio.js
           node --check source/public/kana-recall.js
           node --check source/public/kana-stroke-view.js
