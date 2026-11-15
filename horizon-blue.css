@@ -1,0 +1,127 @@
+/* HORIZON Blue Reference — visual theme preview 2026-11-15
+   Scoped to visual styling. Do not alter routes, state, answers, permissions or data.
+   Design source: HORIZON_Blue_UI_Reference.png. Illustrative poster, not a pixel-perfect product spec.
+   Load LAST after existing theme and feature styles. Remove this link to rollback. */
+:root {
+  --bg: #f2f6ff;
+  --surface: #ffffff;
+  --paper: #ffffff;
+  --navy: #173d78;
+  --text: #112b59;
+  --muted: #627693;
+  --green: #2969c8; /* existing interactive token: used by blue selected states */
+  --sage: #e9f2ff;
+  --lavender: #eff1ff;
+  --line: #dce5f4;
+  --gold: #f0b777;
+  --error: #b43d5a;
+  --shadow: 0 8px 26px rgba(29,68,131,.08);
+  --horizon-blue-700: #194a96;
+  --horizon-blue-600: #2969c8;
+  --horizon-blue-100: #e9f2ff;
+  --horizon-pink-100: #fff0f6;
+  --horizon-success: #128363;
+  --horizon-focus: #246bd3;
+  --sans: Manrope, 'Be Vietnam Pro', 'Noto Sans CJK JP', 'Hiragino Kaku Gothic ProN', sans-serif;
+  --display: var(--sans);
+  --serif: var(--sans);
+}
+body, .appframe { background: #f2f6ff; color: var(--text); }
+body { font-family: var(--sans); }
+h1, h2, h3 { font-family: var(--sans); letter-spacing: -.035em; color: var(--text); }
+h1 { font-weight: 750; }
+h2, h3 { font-weight: 700; }
+p, li { overflow-wrap: anywhere; }
+:where(button, a, input, select, textarea):focus-visible { outline: 3px solid var(--horizon-focus); outline-offset: 3px; }
+.reviewbar { background: linear-gradient(90deg, #183a76, #22549e 70%, #173b78); color: #f5f9ff; }
+.reviewbar .review-label { color: #dce9ff; }
+.reviewbar .devices button { border-color: #789fd6; }
+.reviewbar .devices button.active, .reviewbar .devices button[aria-pressed=true] { background: white; color: #214e99; }
+.sidebar {
+  background: #173d78;
+  box-shadow: inset -1px 0 0 rgba(255,255,255,.08);
+  border-right: 1px solid #164177;
+}
+.sidebar .brand, .sidebar .brand-copy strong, .sidebar .brand-dot { color: #fff; }
+.sidebar .navlink, .sidebar .navlink .icon { color: #d9e8ff; }
+.sidebar .navlink:hover { color: #fff; background: rgba(255,255,255,.1); }
+.sidebar .navlink.active, .sidebar .navlink[aria-current=page] {
+  color: #fff; background: #2d68be; border-left-color: #bcd9ff;
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,.14);
+}
+.sidebar .nav-caption, .sidebar .side-bottom { color: #c9dbf6; }
+.shell, .auth-shell { background: #f2f6ff; }
+.topbar, .atelier-header { background: #fff; border-bottom-color: #e0e9f7; }
+.topbar .breadcrumb, .breadcrumbs-inline { color: #7186a4; }
+main { color: var(--text); }
+.card, .module-card, .course-card, .notecard, .character-card, .profile-tile, .profile-strip {
+  background: #fff;
+  border: 1px solid #dbe5f4;
+  border-radius: 16px;
+  box-shadow: 0 7px 23px rgba(31,75,142,.065);
+}
+.card:hover, .module-card:hover, .course-card:hover, .character-card:hover {
+  border-color: #b8d2f5;
+}
+.cardhead h2, .pagehead h1, .course-level { color: #112e65; }
+.btn, .chip, .pill-button {
+  border-color: #d6e4f6;
+  background: #fff;
+  color: #1d477e;
+  border-radius: 11px;
+}
+.btn:hover, .chip:hover, .pill-button:hover {
+  border-color: #8fb6ed; background: #f0f6ff; color: #194b91;
+}
+.btn.primary, .startbutton, .chip.active, .chip[aria-pressed=true],
+.time-selector .chip.active, button[aria-selected=true].chip {
+  background: #2969c8; color: #fff; border-color: #2969c8;
+  box-shadow: 0 4px 13px rgba(41,105,200,.16);
+}
+.btn.primary:hover, .startbutton:hover {
+  background: #2059ae; border-color: #2059ae; color: #fff;
+}
+.btn:disabled, .chip:disabled { box-shadow: none; }
+.profile-button, .profilemenu, .settings-menu {
+  background: #eef5ff; border-color: #dce8fb; color: #183a74;
+}
+.avatar { background: #e2efff; color: #1d5bb7; }
+.maphero { background: #eef5ff; } /* no layout change */
+.maphero, .maphero { border-color: #d5e6fb; }
+.plan, .maphero, .ks-hero {
+  background: linear-gradient(125deg,#eef5ff 0%,#ffffff 63%,#fff3f9 100%);
+  border: 1px solid #d7e5fb;
+  box-shadow: 0 9px 28px rgba(29,76,150,.055);
+}
+.plan:before, .maphero:before, .ks-hero:before { opacity: .32; }
+.atelier-home, .atelier-login, .auth-shell {
+  background: radial-gradient(ellipse at 90% 14%,rgba(251,202,227,.22),transparent 38%),
+              radial-gradient(ellipse at 10% 6%,rgba(144,195,251,.18),transparent 38%),
+              #f2f6ff;
+  color: #163664;
+}
+.auth-story h1, .atelier-home h1 { color: #102b5b; }
+.progress-line, .n5-progress, .practice-progress, .exam-progress {
+  accent-color: #2969c8;
+}
+input, textarea, select {
+  border-color: #cdddf3; background: #fff; color: #112b59;
+  border-radius: 10px;
+}
+input:focus, select:focus, textarea:focus { border-color: #3975d0; }
+.bottomnav { background: #183e79; border-top-color: rgba(255,255,255,.13); }
+.compact .bottomnav a.active { color: #fff; background: #2c69c0; }
+:where(.success, .is-success, .correct, [data-state="correct"]) {
+  --status-color: #128363;
+}
+:where(.error, .is-error, .incorrect, [data-state="incorrect"]) {
+  --status-color: #b43d5a;
+}
+@media (max-width: 768px) {
+  .card, .module-card, .course-card, .character-card { border-radius: 14px; }
+  .reviewbar { background: #173d78; }
+  .atelier-home { background: #f2f6ff; }
+}
+@media (prefers-reduced-motion: reduce) {
+  :where(.card, .btn, .chip, .navlink) { transition: none !important; }
+}
